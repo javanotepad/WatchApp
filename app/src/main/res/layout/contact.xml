@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/contact_us"
+    tools:context="application.watch.Contact">
+
+
+    <LinearLayout
+            android:layout_width="395dp"
+            android:layout_height="587dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:orientation="vertical"
+            android:weightSum="1"
+            tools:layout_editor_absoluteX="8dp"
+            tools:layout_editor_absoluteY="8dp">
+
+            <LinearLayout
+                android:layout_width="353dp"
+                android:layout_height="117dp"
+                android:gravity="fill_vertical"
+                android:orientation="vertical"
+                android:layout_weight="0.22">
+
+            </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="355dp"
+            android:layout_height="53dp"
+            android:layout_weight="0.05"
+            android:gravity="right|center"
+            android:orientation="vertical"
+            android:weightSum="1">
+
+            <EditText
+                android:id="@+id/name"
+                android:layout_width="268dp"
+                android:layout_height="match_parent"
+                android:ems="10"
+                android:hint="Name"
+                android:inputType="textPersonName" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="357dp"
+            android:layout_height="wrap_content"
+            android:gravity="right|center"
+            android:orientation="vertical"
+            android:weightSum="1">
+
+            <EditText
+                android:id="@+id/email"
+                android:layout_width="269dp"
+                android:layout_height="match_parent"
+                android:ems="10"
+                android:hint="Email"
+                android:inputType="textEmailAddress"
+                tools:layout_editor_absoluteX="16dp"
+                tools:layout_editor_absoluteY="120dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="353dp"
+            android:layout_height="120dp"
+            android:layout_weight="0.22"
+            android:gravity="right|center"
+            android:orientation="vertical"
+            android:weightSum="1">
+
+            <EditText
+                android:id="@+id/msg"
+                android:layout_width="265dp"
+                android:layout_height="match_parent"
+                android:ems="10"
+                android:hint="Message"
+                android:inputType="textMultiLine" />
+        </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="355dp"
+                android:layout_height="64dp"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/sendBtn"
+                    android:layout_width="114dp"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorAccent"
+                    android:elevation="6dp"
+                    android:gravity="center"
+                    android:onClick="sendContact"
+                    android:text="Send"
+                    android:textColor="@android:color/white"
+                    android:textSize="18sp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+</RelativeLayout>
